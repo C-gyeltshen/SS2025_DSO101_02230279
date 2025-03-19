@@ -35,7 +35,7 @@ CMD ["http-server"]
 ```
 docker build -t app .
 ```
-![app-image](./assets/build-app-image.png)
+![app-image](./assets/app-image.png)
 
 * Dcokerfile for server
 
@@ -64,7 +64,7 @@ docker build -t server .
 
 ![images](./assets/docker-image.png)
 
-### **2. Create a custom network for containers to communicate **
+### **2. Create a custom network for containers to communicate**
 
 ```
 docker network create my-network
