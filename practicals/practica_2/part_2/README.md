@@ -96,3 +96,10 @@ docker run -d --name app-container --network my-network --network-alias app-cont
 docker ps
 ```
 ![server-container](./assets/docker-ps.png)
+
+**4. Create compose.yml file**
+
+```
+touch compose.yml
+```
+![docker-compose-up](./assets/docker-compose-up.png)
