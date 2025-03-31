@@ -41,7 +41,7 @@
 ![recurement](./image/recurementFileCreation.png)
 
 3. Create Dockerfile
-```
+```sh
     # syntax=docker/dockerfile:1
     FROM python:3.10-alpine
     WORKDIR /code
@@ -65,7 +65,7 @@
 ## Step 3: Build and run your app with Compose
 
 1. Starting up your application by running
-```
+```sh
 docker compose up.
 ```
 ![run](./image/s3-1.png)
@@ -76,7 +76,7 @@ docker compose up.
 
 3. List all the docker images 
 
-```
+```sh
 docker image ls 
 ```
 ![ls](./image/s3-4.png)
@@ -109,7 +109,7 @@ docker image ls
 
 3. Stop docker compose
 
-```
+```sh
 docker compose down
 ```
 ![stop](./image/s6-3.png)
@@ -118,7 +118,7 @@ docker compose down
 
 1. Create infra.yml file and populate infra.yml with the following content:
 
-```
+```sh
 touch infra.yml
 ```
 

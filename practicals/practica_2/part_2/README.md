@@ -13,7 +13,7 @@ Step 4: Use http-server command in app to start the front end.
 ### **1. Build docker image for both app and server.**
 
 * Dockerfile for app
-```
+```sh
 # Use an official Node.js runtime as the base image
 FROM node:18
 
@@ -32,14 +32,14 @@ CMD ["http-server"]
 
 * Build docker imgage for app
 
-```
+```sh
 docker build -t app .
 ```
 ![app-image](./assets/app-image.png)
 
 * Dcokerfile for server
 
-```
+```sh
 FROM node:10-alpine
 
 WORKDIR /server
@@ -57,7 +57,7 @@ CMD [ "npm", "start" ]
 
 * Build docker image for server 
 
-```
+```sh
 docker build -t server .
 ```
 ![server-image](./assets/build-server-image.png)
@@ -66,7 +66,7 @@ docker build -t server .
 
 ### **2. Create a custom network for containers to communicate**
 
-```
+```sh
 docker network create my-network
 ```
 ![my-network](./assets/ls-docker-network.png)
@@ -76,7 +76,7 @@ docker network create my-network
 
 **1. Create a new conatiner for server service**
 
-```
+```sh
 docker run -d --name server-container --network my-network --network-alias server-container server
 ```
 ![server-container](./assets/container.png)
@@ -85,21 +85,21 @@ Creat and run a new container named **server-container** on the network **my-con
 
 **2. Created a new container for app service**
 
-```
+```sh
 docker run -d --name app-container --network my-network --network-alias app-container -p 3000:3000 app   
 ```
 ![server-container](./assets/container.png)
 
 **3. Check the running containers**
 
-```
+```sh
 docker ps
 ```
 ![server-container](./assets/docker-ps.png)
 
 **4. Create compose.yml file**
 
-```
+```sh
 touch compose.yml
 ```
 ![docker-compose-up](./assets/docker-compose-up.png)
