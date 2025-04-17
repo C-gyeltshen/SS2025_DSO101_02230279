@@ -58,4 +58,4 @@ docker push gyeltshen23/practical4:latest
 
     ![render deployment](./image/render.png)
 
-`https://dso-practical4-dockerhub.onrender.com`
+    [Link](https://dso-practical4-dockerhub.onrender.com) of the deployed application.
