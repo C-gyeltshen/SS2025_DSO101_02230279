@@ -1,4 +1,4 @@
-# Docker Compose practical 
+# Multi Container application using docker
 
 ## Step 1: Setup
 
