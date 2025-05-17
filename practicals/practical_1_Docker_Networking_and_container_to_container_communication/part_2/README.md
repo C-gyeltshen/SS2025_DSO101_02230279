@@ -8,7 +8,7 @@ Step 3: Use ```npm start``` command to run the server.
 Step 4: Use http-server command in app to start the front end.   
 
 
-## part 2 chellege 
+## part 2 Challenge
 
 ### **1. Build docker image for both app and server.**
 
